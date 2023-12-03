@@ -8,6 +8,8 @@ import 'package:cc206_chatbot_application/features/home_page.dart';
 
 
 class Login extends StatelessWidget {
+  const Login({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -108,10 +110,10 @@ class Login extends StatelessWidget {
                 ),
                 child: const Text("Don't have an Account? Sign Up", style: TextStyle(decoration: TextDecoration.underline, ),),
               ),
-              const SizedBox(height: 16.0),
             ],
           ),
-        ), // existing Login page code
+        ),
+         // existing Login page code
         ),
       ),
       ),

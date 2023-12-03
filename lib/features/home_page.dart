@@ -167,17 +167,20 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                           onTap: () {
                             showModal();
                           },
-                          child: Container(
-                            height: 30,
-                            width: 30,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: const Icon(
-                              Icons.add,
-                              color: Colors.black,
-                              size: 21,
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 4),
+                            child: Container(
+                              height: 30,
+                              width: 30,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: const Icon(
+                                Icons.add,
+                                color: Colors.black,
+                                size: 21,
+                              ),
                             ),
                           ),
                         ),
@@ -203,22 +206,26 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
                           // Handle icon tap
                         },
                         child: Padding(
-                          padding: const EdgeInsets.only(right: 10.0),
+                          padding: const EdgeInsets.only(right: 10.0, bottom: 5),
                           child: Container(
-                            height: 40,
-                            width: 40,
+                            height: 30,
+                            width: 30,
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(25),
                             ),
-                            child: const Icon(
-                              Icons.send,
-                              color: Color.fromARGB(156, 134, 115, 3),
+                            child: const Padding(
+                              padding: EdgeInsets.only(left: 3.5),
+                              child: Icon(
+                                Icons.send,
+                                color: Color.fromARGB(156, 134, 115, 3),
+                              ),
                             ),
                           ),
                         ),
                       ),
                     ),
+                    const SizedBox(height: 50.0),
                   ],
                 ),
               ),

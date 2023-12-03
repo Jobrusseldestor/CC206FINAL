@@ -95,7 +95,7 @@ class _faqpageState extends State<faqpage> {
                   ),
                 ),
               ),
-
+              const SizedBox(height: 250.0),
               ]),
             ),
           ),
